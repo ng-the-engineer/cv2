@@ -1,0 +1,14 @@
+.key-cert-column-title {
+  display: inline-block;
+  width: 400px;
+}
+
+.key-cert-column-org {
+  display: inline-block;
+  width: 100px;
+}
+
+.key-cert-column-date {
+  display: inline-block;
+  width: 100px;
+}

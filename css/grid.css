@@ -1,0 +1,20 @@
+.grid-container {
+  display: grid;
+  padding: 0 0;
+}
+
+.container-column-2 {
+  grid-template-columns: 50% 50%;
+}
+
+.container-column-3 {
+  grid-template-columns: 33% 33% 33%;
+}
+
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8);*/
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  /* padding: 20px;
+	font-size: 30px;  */
+  /* text-align: cen; */
+}

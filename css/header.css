@@ -1,0 +1,27 @@
+.cv-name {
+  color: #40739e;
+  font-family: "Tinos", serif;
+  font-size: 35px;
+}
+
+.contacts {
+  list-style: none;
+  float: right;
+  margin: 0 0;
+  font-size: 10px;
+}
+
+.contact-item {
+  font-size: 8px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 300;
+}
+
+.ion-icon {
+  font-size: 14px;
+}
+
+.one-line-summary {
+  font-family: "Niconne", cursive;
+  font-size: 18px;
+}

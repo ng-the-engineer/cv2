@@ -1,0 +1,22 @@
+.skill-tag {
+  border-radius: 15px 15px 15px 15px;
+  background: #fbc531;
+  padding: 1px 4px;
+  font-size: 8px;
+  font-weight: 300;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.title {
+  color: #0097e6;
+  font-weight: bold;
+}
+
+.title-part-time-project {
+  color: #44bd32;
+  font-weight: bold;
+}
+
+.company-name {
+  font-weight: bold;
+}
