@@ -19,8 +19,15 @@
     <link rel="stylesheet" type="text/css" href="css/competencies.css" />
     <link rel="stylesheet" type="text/css" href="css/career.css" />
     <link rel="stylesheet" type="text/css" href="css/cert.css" />
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="css/copy.css" />
+    <link rel="stylesheet" type="text/css" href="css/snackbar.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -37,6 +44,39 @@
   </head>
   <body class="document">
     <div class="page" contenteditable="false">
+      <div class="icon-bar no-print">
+        <!-- Linkedin -->
+        <a
+          href="https://www.linkedin.com/signup/cold-join"
+          target="_blank"
+          class="linkedin"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+
+        <!-- Print shortcut -->
+        <a href="#" class="print" onclick="print()"
+          ><i class="fa fa-print"></i
+        ></a>
+
+        <!-- Copy to clipboard -->
+        <a href="#" class="copy" onclick="copyToClipboard()"
+          ><i class="fa fa-clone" aria-hidden="true"></i
+        ></a>
+      </div>
+
+      <!-- The source field for copyToClipboard -->
+      <input
+        id="cvUrl"
+        class="hidden-cv-url"
+        type="text"
+        value="https://ng-the-engineer.github.io/cv/"
+      />
+
+      <!-- The actual snackbar -->
+      <div id="snackbar">
+        Copied https://ng-the-engineer.github.io/cv2/ to clipboard
+      </div>
+
       <div class="grid-container container-column-2">
         <div>
           <div class="cv-name">John Doe</div>
@@ -288,14 +328,6 @@
       </div>
 
       <div>
-        <span class="key-cert-column-title">
-          MongoDB Professional Certification
-        </span>
-        <span class="key-cert-column-org">MongoDB</span>
-        <span class="key-cert-column-date">Aug 2017</span>
-      </div>
-
-      <div>
         <span class="key-cert-column-title"> Javascript boot camp </span>
         <span class="key-cert-column-org">Udemy</span>
         <span class="key-cert-column-date">Feb 2016</span>
@@ -313,9 +345,8 @@
         </div>
       </div>
     </div>
-
-    <script type="text/javascript">
-      // window.print();
-    </script>
   </body>
+  <script src="js/print.js"></script>
+  <script src="js/copy.js"></script>
+  <script src="js/snackbar.js"></script>
 </html>
